@@ -34,7 +34,7 @@ class DataAnalyzer:
                 "std": float(self.df['price'].std())
             },
             "top_locations": self.df['location'].value_counts().head(5).to_dict(),
-            "top_categories": self.df['category'].value_counts().head(5).to_dict(),
+            "top_categories": self.df['category_id'].value_counts().head(5).to_dict(),
             "keywords_summary": self.df['keyword'].value_counts().to_dict()
         }
 

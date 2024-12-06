@@ -83,7 +83,7 @@ class DataVisualizer:
             保存的文件路径
         """
         plt.figure(figsize=(12, 6))
-        category_counts = self.df['category'].value_counts().head(10)
+        category_counts = self.df['category_id'].value_counts().head(10)
         category_counts.plot(kind='bar')
         plt.title('Top 10 类别分布')
         plt.xlabel('类别')
